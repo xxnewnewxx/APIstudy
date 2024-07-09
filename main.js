@@ -1,4 +1,4 @@
-const API_KEY = `29a96ef9b757480189bbd02b34691b57`;
+const API_KEY = ``;
 const pageSize = 10;
 let page = 2;
 let category = "";
