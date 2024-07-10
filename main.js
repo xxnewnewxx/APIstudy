@@ -5,9 +5,7 @@ let category = "";
 let keyword = "";
 let news = [];
 const getLatesNews = async () => {
-  const url = new URL(
-    `https://668dd865cc0e7e24a08db0f2--rad-sawine-85f04e.netlify.app/top-headlines`
-  );
+  const url = new URL(`https://rad-sawine-85f04e.netlify.app/top-headlines`);
   //   console.log("uuu", url);
   const response = await fetch(url);
   const data = await response.json();
