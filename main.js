@@ -1,4 +1,4 @@
-const API_KEY = `http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`;
+const API_KEY = `https://noona-times-v2.netlify.app/top-headlines`;
 const pageSize = 10;
 let page = 2;
 let category = "";
@@ -6,7 +6,7 @@ let keyword = "";
 let news = [];
 const getLatesNews = async () => {
   const url = new URL(
-    `https://668dd865cc0e7e24a08db0f2--rad-sawine-85f04e.netlify.app/top-headlines?country=us&pageSize=${pageSize}&page=${page}&category=${category}&keyword=${keyword}&apiKey=${API_KEY}`
+    `https://668dd865cc0e7e24a08db0f2--rad-sawine-85f04e.netlify.app/top-headlines`
   );
   //   console.log("uuu", url);
   const response = await fetch(url);
